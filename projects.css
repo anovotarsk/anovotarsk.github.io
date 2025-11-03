@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+header {
+  background-color: #004aad;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.projects-page main {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #004aad;
+  padding-bottom: 0.5rem;
+}
+
+.project-meta {
+  color: #666;
+  font-weight: bold;
+  margin: 0.5rem 0 1rem;
+}
+
+.project-summary {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.project-card ul li {
+  margin-bottom: 0.6rem;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #004aad;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.button:hover {
+  background-color: #ffb100;
+  color: #222;
+  border-color: #ffb100;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 2.5rem 1rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+}

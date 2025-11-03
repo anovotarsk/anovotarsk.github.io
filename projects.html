@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artur Novotarskyi - Projects</title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body class="projects-page">
+  <header>
+    <h1>Selected Projects</h1>
+    <p>Engineering experiments, tools, and collaborations that shaped my technical journey.</p>
+    <a class="button" href="index.html">Back to Portfolio</a>
+  </header>
+
+  <main>
+    <section class="project-card">
+      <h2>Raspberry Pi Cluster Lab</h2>
+      <p class="project-meta">IoT Systems · Python · Kubernetes · 2023</p>
+      <p class="project-summary">Built a compact Raspberry Pi cluster to emulate distributed IoT deployments, automate
+        firmware testing, and experiment with Kubernetes orchestration on ARM hardware.</p>
+      <ul>
+        <li>Provisioned eight Raspberry Pi nodes with shared storage and Ansible-based configuration management.</li>
+        <li>Developed Python services to simulate sensor networks, stress network fabrics, and gather telemetry.</li>
+        <li>Benchmarked containerized workloads, highlighting optimization opportunities for constrained hardware.</li>
+      </ul>
+    </section>
+
+    <section class="project-card">
+      <h2>Network Validation Toolkit</h2>
+      <p class="project-meta">SmartNIC Firmware · C/C++ · Python · 2024</p>
+      <p class="project-summary">Rapid test harness for SmartNIC pipelines built on top of DPDK and custom packet
+        generators, enabling automated regression runs across dozens of firmware builds.</p>
+      <ul>
+        <li>Extended C++ data-plane components to inject synthetic traffic patterns and verify metrics in real time.</li>
+        <li>Created a Python coordination layer that synchronized hardware traffic generators with Jenkins pipelines.</li>
+        <li>Reduced manual verification overhead by 60% via reproducible test suites and auto-generated reports.</li>
+      </ul>
+    </section>
+
+    <section class="project-card">
+      <h2>Rescue Navigation Trainer</h2>
+      <p class="project-meta">Education · React · Leaflet · 2022</p>
+      <p class="project-summary">Interactive web tool to help youth rescue teams practice topographic map reading and route
+        planning, inspired by expeditions with the School of Safety.</p>
+      <ul>
+        <li>Implemented draggable scenarios with elevation profiles, checkpoints, and safety alerts.</li>
+        <li>Integrated Leaflet maps with offline caching so the trainer works during field exercises.</li>
+        <li>Adopted feedback from students and instructors to refine UX flows and content difficulty.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
