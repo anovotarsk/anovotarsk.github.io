@@ -80,6 +80,11 @@ a:hover {
   margin-bottom: 0.6rem;
 }
 
+.project-repo {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
 .project-figure {
   margin: 1.5rem 0;
   text-align: center;
