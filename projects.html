@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artur Novotarskyi - Projects</title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body class="projects-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <h1><a href="index.html">Artur Novotarskyi</a></h1>
+        <p>Software Engineer · Network Systems · Embedded Development</p>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="sports.html">Sports</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Selected Projects</h1>
+      <p>Engineering experiments, tools, and collaborations that shaped my technical journey.</p>
+      <a class="button" href="index.html">Back to Portfolio</a>
+    </section>
+    <section class="project-card">
+      <h2>Automated Cryptocurrency Trading Bot</h2>
+      <p class="project-meta">Python 3 · Binance API · PostgreSQL · Docker · Raspberry Pi Cluster · 2025</p>
+      <p class="project-summary">I developed an automated trading bot that analyzes cryptocurrency market data and executes
+        trades based on algorithmic strategies. The system collects real-time data from the Binance API, applies technical
+        indicators, and performs automated buy/sell operations using Python scripts and a PostgreSQL database for storing
+        historical data.</p>
+      <ul>
+        <li>Implemented strategy modules with configurable risk parameters and integrated them with Binance spot trading.</li>
+        <li>Added a backtesting engine that replays historical data to validate algorithms before live deployment.</li>
+        <li>Containerized services with Docker and orchestrated monitoring dashboards on a Raspberry Pi cluster.</li>
+        <li>Built alerting and health checks to keep the bot fault tolerant when network or exchange issues occur.</li>
+      </ul>
+      <figure class="project-figure">
+        <div class="project-collage project-collage--compact" role="group" aria-label="Architecture, hardware, and trading database">
+          <button type="button" class="collage-thumb" data-collage="trading" data-collage-index="0">
+            <img src="resources/projects/invest_arch.png" alt="High-level architecture of the automated trading bot">
+          </button>
+          <button type="button" class="collage-thumb" data-collage="trading" data-collage-index="1">
+            <img src="resources/projects/invest_cluster.jpg" alt="Hardware setup of the Raspberry Pi cluster running the bot">
+          </button>
+          <button type="button" class="collage-thumb" data-collage="trading" data-collage-index="2">
+            <img src="resources/projects/invest_database.png" alt="Database view showing recorded crypto exchange trades">
+          </button>
+        </div>
+        <figcaption>Architecture, Hardware, and Trade History Overview</figcaption>
+      </figure>
+      <p class="project-takeaway">This project taught me how to design stable, fault-tolerant systems where data accuracy
+        and timing are critical.</p>
+    </section>
+
+    <section class="project-card">
+      <h2>ptf_nn_agent for Windows</h2>
+      <p class="project-meta">Python 3 · Ethernet · TCP/IP · Sockets · Device Validation · 2024</p>
+      <p class="project-summary">Developed ptf_nn_agent, a Windows-compatible extension for the Packet Test Framework (PTF) to automate L2/L3 network verification. The agent bridges PTF scripts with the Windows networking stack through zero-copy NanoMsg sockets, unlocking cross-platform testing and device validation.</p>
+      <ul>
+        <li>Bridged PTF scripts with native Windows adapters, translating Ethernet frames and routing metadata for on-host validation.</li>
+        <li>Implemented NanoMsg-based IPC so PTF traffic generators remotely control Windows adapters.</li>
+      </ul>
+    </section>
+
+    <section class="project-card">
+      <h2>KeePass-Compatible Password Manager</h2>
+      <p class="project-meta">C++ · Qt5 · Cryptography · Cross-Platform · 2021</p>
+      <p class="project-summary">I built a lightweight, cross-platform password manager fully compatible with the KeePass
+        (KDBX) format. It supports master-password and key-file authentication, secure entry management, and local
+        encryption using AES-256 with Argon2id key derivation and HMAC-SHA256 integrity protection. Source code available
+        on <a href="https://github.com/anovotarsk/keepass" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      <ul>
+        <li>Implemented the KDBX 4 data model, including groups, entries, custom fields, and attachment handling.</li>
+        <li>Integrated Qt5 UI components for cross-platform desktop support with secure clipboard management.</li>
+      </ul>
+      <figure class="project-figure">
+        <div class="project-collage project-collage--compact" role="group" aria-label="KeePass project screenshots">
+          <button type="button" class="collage-thumb" data-collage="keepass" data-collage-index="0">
+            <img src="resources/projects/projects_keepass_1.jpg" alt="KeePass-compatible manager main dashboard view">
+          </button>
+          <button type="button" class="collage-thumb" data-collage="keepass" data-collage-index="1">
+            <img src="resources/projects/projects_keepass_2.jpg" alt="Password entry editor with security settings">
+          </button>
+        </div>
+        <figcaption>KeePass-Compatible Manager UI</figcaption>
+      </figure>
+    </section>
+    <section class="project-card">
+      <h2>Custom ls Implementation</h2>
+      <p class="project-meta">C · POSIX API · Mac · Linux · System Calls · 2020</p>
+      <p class="project-summary">Implemented a custom version of the Unix <code>ls</code> utility in C, replicating core
+        functionality such as directory traversal, sorting, and permission parsing using POSIX system calls. The project
+        deepened my understanding of low-level file system APIs, buffers, and process I/O management.</p>
+      <ul>
+        <li>Handled option parsing for flags such as <code>-l</code>, <code>-a</code>, <code>-t</code>, <code>-R</code>, <code>-A</code>, and <code>-p</code> to mirror GNU ls behavior.</li>
+        <li>Used <code>opendir</code>, <code>readdir</code>, and <code>stat</code> to gather metadata and format human-readable output.</li>
+        <li>Implemented platform-aware abstractions to ensure compatibility across macOS and Linux environments.</li>
+      </ul>
+      <figure class="project-figure">
+        <div class="project-collage project-collage--compact" role="group" aria-label="uls project screenshots">
+          <button type="button" class="collage-thumb" data-collage="uls" data-collage-index="0">
+            <img src="resources/projects/uls_1.png" alt="uls utility listing files with custom formatting">
+          </button>
+          <button type="button" class="collage-thumb" data-collage="uls" data-collage-index="1">
+            <img src="resources/projects/uls_2.png" alt="uls output showing recursive directory traversal">
+          </button>
+        </div>
+        <figcaption>uls Output Examples</figcaption>
+      </figure>
+      <p class="project-repo">Source code available on <a href="https://github.com/anovotarsk/uls" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <div class="project-lightbox" data-project-lightbox aria-hidden="true" tabindex="-1">
+    <button class="project-lightbox__close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="project-lightbox__nav project-lightbox__nav--prev" type="button" aria-label="Previous image">&#10094;</button>
+    <figure class="project-lightbox__frame">
+      <img class="project-lightbox__image" src="" alt="">
+      <figcaption class="project-lightbox__caption"></figcaption>
+    </figure>
+    <button class="project-lightbox__nav project-lightbox__nav--next" type="button" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <script>
+    (function () {
+      const lightbox = document.querySelector('[data-project-lightbox]');
+      if (!lightbox) return;
+
+      const imageEl = lightbox.querySelector('.project-lightbox__image');
+      const captionEl = lightbox.querySelector('.project-lightbox__caption');
+      const closeBtn = lightbox.querySelector('.project-lightbox__close');
+      const prevBtn = lightbox.querySelector('.project-lightbox__nav--prev');
+      const nextBtn = lightbox.querySelector('.project-lightbox__nav--next');
+
+      const groups = {};
+      document.querySelectorAll('[data-collage]').forEach((trigger) => {
+        const group = trigger.dataset.collage;
+        const index = Number(trigger.dataset.collageIndex || groups[group]?.length || 0);
+        const img = trigger.querySelector('img');
+        if (!img) return;
+
+        if (!groups[group]) {
+          groups[group] = [];
+        }
+        groups[group][index] = {
+          trigger,
+          src: img.getAttribute('src'),
+          alt: img.getAttribute('alt'),
+        };
+
+        trigger.addEventListener('click', () => open(group, index));
+        trigger.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            open(group, index);
+          }
+        });
+      });
+
+      let currentGroup = null;
+      let currentIndex = 0;
+
+      function open(group, index) {
+        if (!groups[group] || !groups[group][index]) return;
+        currentGroup = group;
+        currentIndex = index;
+        updateLightbox();
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('no-scroll');
+        lightbox.focus();
+      }
+
+      function close() {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('no-scroll');
+        const trigger = groups[currentGroup]?.[currentIndex]?.trigger;
+        trigger?.focus({ preventScroll: true });
+        currentGroup = null;
+      }
+
+      function updateLightbox() {
+        const entry = groups[currentGroup]?.[currentIndex];
+        if (!entry) return;
+        imageEl.src = entry.src;
+        imageEl.alt = entry.alt;
+        captionEl.textContent = entry.alt;
+      }
+
+      function step(delta) {
+        if (!currentGroup) return;
+        const entries = groups[currentGroup];
+        currentIndex = (currentIndex + delta + entries.length) % entries.length;
+        updateLightbox();
+      }
+
+      closeBtn?.addEventListener('click', close);
+      prevBtn?.addEventListener('click', () => step(-1));
+      nextBtn?.addEventListener('click', () => step(1));
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+          close();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (!lightbox.classList.contains('is-open')) return;
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          close();
+        } else if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          step(-1);
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          step(1);
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
