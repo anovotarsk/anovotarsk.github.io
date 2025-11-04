@@ -9,12 +9,20 @@
 </head>
 
 <body>
-  <header>
-    <h1>Artur Novotarskyi</h1>
-    <p>Software Engineer | Network Systems | Embedded Development</p>
-    <a class="button-link" href="experience.html">Explore Work Experience</a>
-    <a class="button-link" href="sports.html">Sports & Activities</a>
-    <a class="button-link" href="projects.html">My Projects</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <h1><a href="index.html">Artur Novotarskyi</a></h1>
+        <p>Software Engineer · Network Systems · Embedded Development</p>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="sports.html">Sports</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section id="about">
@@ -25,17 +33,17 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Raspberry Pi Cluster</h3>
-      <p>Built a small computing cluster using Raspberry Pi devices to simulate and test IoT systems and network
-        automation scripts.</p>
-    </div>
-    <div class="project">
-      <h3>Network Verification Framework</h3>
-      <p>Contributed to firmware verification tools for SmartNIC and L2/L3 networking solutions, ensuring data integrity
-        and reliability in real-time systems.</p>
-    </div>
+    <h2>Featured Projects</h2>
+    <ul class="project-list">
+      <li><strong>Automated Cryptocurrency Trading Bot (2025)</strong> — Python, Binance API, PostgreSQL; automated
+        trading, monitoring, and alerting.</li>
+      <li><strong>ptf_nn_agent for Windows (2024)</strong> — Python, NanoMsg, Windows networking; extends PTF for
+        cross-platform L2/L3 validation.</li>
+      <li><strong>KeePass-Compatible Password Manager (2021)</strong> — C++, Qt5; KeePass-compatible password vault with
+        AES-256/Argon2id protection.</li>
+      <li><strong>Custom ls Implementation (2020)</strong> — C, POSIX; GNU ls-compatible directory tool for macOS/Linux.</li>
+    </ul>
+    <a class="project-link-inline" href="projects.html">See all projects</a>
   </section>
 
   <section id="experience">
