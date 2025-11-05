@@ -25,50 +25,115 @@
     </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a software engineer from Ukraine with experience in C, C++, and Python development. My main focus is
-      low-level networking systems, embedded software, and automation. I enjoy solving technical problems and building
-      efficient, reliable systems.</p>
-  </section>
+  <main>
+    <section class="hero" id="about">
+      <p class="hero-kicker">Network & Systems Engineer</p>
+      <h2>Building resilient platforms where hardware, firmware, and software meet.</h2>
+      <p>I design and validate networked systems—from SmartNIC pipelines and automated trading bots to cross-platform
+        tooling that keeps devices aligned. My toolkit spans C/C++, Python, POSIX, and low-level networking, with a bias
+        toward automation, reliability, and clear communication.</p>
+      <div class="hero-cta">
+        <a class="primary-cta" href="projects.html">Explore Projects</a>
+        <a class="secondary-cta" href="experience.html">View Experience</a>
+        <a class="secondary-cta" href="#contact">Get in Touch</a>
+      </div>
+      <ul class="pill-list" aria-label="Key technologies">
+        <li class="pill">C / C++</li>
+        <li class="pill">Python</li>
+        <li class="pill">PTF & NanoMsg</li>
+        <li class="pill">Ethernet / TCP/IP</li>
+        <li class="pill">Docker & CI/CD</li>
+        <li class="pill">Cross-platform tooling</li>
+      </ul>
+    </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <ul class="project-list">
-      <li><strong>Automated Cryptocurrency Trading Bot (2025)</strong> — Python, Binance API, PostgreSQL; automated
-        trading, monitoring, and alerting.</li>
-      <li><strong>ptf_nn_agent for Windows (2024)</strong> — Python, NanoMsg, Windows networking; extends PTF for
-        cross-platform L2/L3 validation.</li>
-      <li><strong>KeePass-Compatible Password Manager (2021)</strong> — C++, Qt5; KeePass-compatible password vault with
-        AES-256/Argon2id protection.</li>
-      <li><strong>Custom ls Implementation (2020)</strong> — C, POSIX; GNU ls-compatible directory tool for macOS/Linux.</li>
-    </ul>
-    <a class="project-link-inline" href="projects.html">See all projects</a>
-  </section>
+    <section class="highlight-grid" aria-label="Focus areas">
+      <article class="highlight-card">
+        <h3>Device & Network Validation</h3>
+        <p>Extend Packet Test Framework and SmartNIC toolchains to validate L2/L3 data paths across Windows and Linux
+          environments.</p>
+      </article>
+      <article class="highlight-card">
+        <h3>Automation & Tooling</h3>
+        <p>Automate pipelines, trading engines, and configuration workflows with Python, Docker, and reproducible CI/CD
+          practices.</p>
+      </article>
+      <article class="highlight-card">
+        <h3>Leadership Through Action</h3>
+        <p>Lead sports rescue teams and public trainings, bringing the same focus on preparation, communication, and
+          ownership into engineering teams.</p>
+      </article>
+    </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <p><strong>PLVision</strong> — Software Engineer (2021–present)<br>Working on C/C++ and Python systems for data
-      processing, PTF test automation, and virtualization with QEMU and Docker.</p>
-    <p><strong>Intellias</strong> — Associate C++ Engineer (2020–2021)<br>Developed unit tests and software components
-      for automotive navigation systems.</p>
-  </section>
+    <section id="projects" class="content-section">
+      <div class="section-heading">
+        <h2>Featured Projects</h2>
+        <a href="projects.html" class="section-link">See all projects</a>
+      </div>
+      <div class="feature-list">
+        <article class="feature-card">
+          <h3>Automated Cryptocurrency Trading Bot</h3>
+          <p>Dockerised Python engine using Binance API, PostgreSQL, and Raspberry Pi monitoring to execute, audit, and
+            backtest trading strategies.</p>
+        </article>
+        <article class="feature-card">
+          <h3>ptf_nn_agent for Windows</h3>
+          <p>NanoMsg-based bridge that connects PTF scripts to native Windows networking stack, enabling cross-platform
+            SmartNIC validation.</p>
+        </article>
+        <article class="feature-card">
+          <h3>KeePass-Compatible Password Manager</h3>
+          <p>C++/Qt5 desktop vault interoperable with KDBX format, using AES-256 and Argon2id to secure credentials across
+            platforms.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Custom ls Implementation</h3>
+          <p>POSIX-compliant directory listing utility mirroring GNU <code>ls</code> behaviour across macOS and Linux with
+            support for extended flags.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="volunteering">
-    <h2>Volunteering</h2>
-    <div class="volunteer">
-      <p>Organized educational workshops for school students in programming and participated in sports tourism
-        volunteering events, helping young people build teamwork and resilience.</p>
-    </div>
-  </section>
+    <section id="experience" class="content-section">
+      <div class="section-heading">
+        <h2>Experience Snapshot</h2>
+        <a href="experience.html" class="section-link">Deep dive</a>
+      </div>
+      <ul class="experience-list">
+        <li class="experience-item">
+          <div class="experience-header">
+            <span class="experience-role">Software Engineer · PLVision</span>
+            <span class="experience-meta">2021 – Present</span>
+          </div>
+          <p>Build and validate SmartNIC firmware, packet test frameworks, and CI/CD automation for networked devices.</p>
+        </li>
+        <li class="experience-item">
+          <div class="experience-header">
+            <span class="experience-role">Associate C++ Engineer · Intellias</span>
+            <span class="experience-meta">2020 – 2021</span>
+          </div>
+          <p>Developed C++ modules, unit tests, and tooling for automotive navigation systems.</p>
+        </li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:artur.novotarskyi@gmail.com">artur.novotarskyi@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/anovotarsk" target="_blank">github.com/anovotarsk</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/arturnovotarskyi" target="_blank">linkedin.com/in/arturnovotarskyi</a>
-    </p>
-  </section>
+    <section id="spotlight" class="content-section">
+      <h2>Beyond the Desk</h2>
+      <p>I lead rescue sports teams, judge national competitions, and organise outdoor expeditions. The same preparation
+        and teamwork keep my engineering projects on track.</p>
+      <a class="section-link" href="sports.html">Explore sports journey</a>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <h2>Let’s Build Something</h2>
+      <p>You can reach me directly or explore my code and professional profile.</p>
+      <div class="contact-links">
+        <a href="mailto:artur.novotarskyi@gmail.com" class="primary-cta">artur.novotarskyi@gmail.com</a>
+        <a href="https://github.com/anovotarsk" target="_blank" rel="noopener noreferrer">github.com/anovotarsk</a>
+        <a href="https://linkedin.com/in/arturnovotarskyi" target="_blank" rel="noopener noreferrer">linkedin.com/in/arturnovotarskyi</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Artur Novotarskyi | Built for College Application</p>
