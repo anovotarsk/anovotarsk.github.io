@@ -239,22 +239,21 @@ h2 {
   line-height: 1.55;
 }
 
-.experience-list {
-  list-style: none;
-  margin: 1.5rem 0 0;
-  padding: 0;
+.experience-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-.experience-item {
+.experience-card {
   background: white;
   border-radius: 10px;
-  padding: 1.2rem 1.4rem;
+  padding: 1.4rem 1.5rem;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid rgba(0, 74, 173, 0.35);
 }
 
-.experience-header {
+.experience-card-header {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -271,9 +270,19 @@ h2 {
   font-size: 0.95rem;
 }
 
-.experience-item p {
-  margin: 0;
+.experience-summary {
+  margin: 0 0 0.75rem;
   line-height: 1.5;
+}
+
+.experience-points {
+  padding-left: 1.1rem;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.experience-points li {
+  margin-bottom: 0.45rem;
 }
 
 .spotlight {

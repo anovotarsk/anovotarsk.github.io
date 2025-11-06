@@ -29,7 +29,7 @@
     <section class="hero" id="about">
       <p class="hero-kicker">Network & Systems Engineer</p>
       <h2>Building resilient platforms where hardware, firmware, and software meet.</h2>
-      <p>I design and validate networked systems—from SmartNIC pipelines and automated trading bots to cross-platform
+      <p>I design and validate networked systems—from high-throughput data pipelines and automated trading bots to cross-platform
         tooling that keeps devices aligned. My toolkit spans C/C++, Python, POSIX, and low-level networking, with a bias
         toward automation, reliability, and clear communication.</p>
       <div class="hero-cta">
@@ -48,11 +48,11 @@
     </section>
 
     <section class="highlight-grid" aria-label="Focus areas">
-      <article class="highlight-card">
-        <h3>Device & Network Validation</h3>
-        <p>Extend Packet Test Framework and SmartNIC toolchains to validate L2/L3 data paths across Windows and Linux
-          environments.</p>
-      </article>
+        <article class="highlight-card">
+          <h3>Device & Network Validation</h3>
+          <p>Extend Packet Test Framework and network firmware toolchains to validate L2/L3 data paths across Windows and
+            Linux environments.</p>
+        </article>
       <article class="highlight-card">
         <h3>Automation & Tooling</h3>
         <p>Automate pipelines, trading engines, and configuration workflows with Python, Docker, and reproducible CI/CD
@@ -79,7 +79,7 @@
         <article class="feature-card">
           <h3>ptf_nn_agent for Windows</h3>
           <p>NanoMsg-based bridge that connects PTF scripts to native Windows networking stack, enabling cross-platform
-            SmartNIC validation.</p>
+            device validation.</p>
         </article>
         <article class="feature-card">
           <h3>KeePass-Compatible Password Manager</h3>
@@ -94,27 +94,57 @@
       </div>
     </section>
 
-    <section id="experience" class="content-section">
+    <section id="experience" class="content-section experience-section">
       <div class="section-heading">
         <h2>Experience Snapshot</h2>
         <a href="experience.html" class="section-link">Deep dive</a>
       </div>
-      <ul class="experience-list">
-        <li class="experience-item">
-          <div class="experience-header">
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-card-header">
             <span class="experience-role">Software Engineer · PLVision</span>
-            <span class="experience-meta">2021 – Present</span>
+            <span class="experience-meta">Feb 2024 – Present</span>
           </div>
-          <p>Build and validate SmartNIC firmware, packet test frameworks, and CI/CD automation for networked devices.</p>
-        </li>
-        <li class="experience-item">
-          <div class="experience-header">
+          <p class="experience-summary">Accelerating storage offload solutions with automated validation and driver optimisation.</p>
+          <ul class="experience-points">
+            <li>Built Jenkins + Azure DevOps pipelines to cover build, test, and deployment loops.</li>
+            <li>Created Python traffic frameworks that cut manual QA and surface edge-case regressions.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <span class="experience-role">Software Engineer · Servi5</span>
+            <span class="experience-meta">Mar 2023 – Feb 2024</span>
+          </div>
+          <p class="experience-summary">Owned an enterprise cybersecurity platform, modernising delivery and analytics.</p>
+          <ul class="experience-points">
+            <li>Refactored legacy C/C++ core and redesigned licensing for dependable deployments.</li>
+            <li>Partnered with DevOps on containerised rollouts and automated validation suites.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <span class="experience-role">Software Engineer · PLVision</span>
+            <span class="experience-meta">Jul 2021 – Jan 2023</span>
+          </div>
+          <p class="experience-summary">Expanded L2/L3 validation with byte-level traffic analysis and new automation.</p>
+          <ul class="experience-points">
+            <li>Extended verification suites with new PTF modules and automated flows.</li>
+            <li>Analysed traffic captures to resolve stability issues in switch pipelines.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-card-header">
             <span class="experience-role">Associate C++ Engineer · Intellias</span>
-            <span class="experience-meta">2020 – 2021</span>
+            <span class="experience-meta">Dec 2020 – Jul 2021</span>
           </div>
-          <p>Developed C++ modules, unit tests, and tooling for automotive navigation systems.</p>
-        </li>
-      </ul>
+          <p class="experience-summary">Delivered navigation features with rigorous testing and automation.</p>
+          <ul class="experience-points">
+            <li>Implemented C++ modules and GTest coverage for infotainment stacks.</li>
+            <li>Built Python utilities that automated daily verification and regression checks.</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section id="spotlight" class="content-section spotlight">
