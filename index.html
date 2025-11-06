@@ -20,58 +20,188 @@
         <a href="experience.html">Experience</a>
         <a href="projects.html">Projects</a>
         <a href="sports.html">Sports</a>
+        <a href="volunteers.html">Volunteer Work</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a software engineer from Ukraine with experience in C, C++, and Python development. My main focus is
-      low-level networking systems, embedded software, and automation. I enjoy solving technical problems and building
-      efficient, reliable systems.</p>
-  </section>
+  <main>
+    <section class="hero" id="about">
+      <p class="hero-kicker">Network & Systems Engineer</p>
+      <h2>Building resilient platforms where hardware, firmware, and software meet.</h2>
+      <p>I design and validate networked systems—from high-throughput data pipelines and automated trading bots to cross-platform
+        tooling that keeps devices aligned. My toolkit spans C/C++, Python, POSIX, and low-level networking, with a bias
+        toward automation, reliability, and clear communication.</p>
+      <div class="hero-cta">
+        <a class="primary-cta" href="projects.html">Explore Projects</a>
+        <a class="secondary-cta" href="experience.html">View Experience</a>
+        <a class="secondary-cta" href="#contact">Get in Touch</a>
+      </div>
+      <ul class="pill-list" aria-label="Key technologies">
+        <li class="pill">C / C++</li>
+        <li class="pill">Python</li>
+        <li class="pill">PTF & NanoMsg</li>
+        <li class="pill">Ethernet / TCP/IP</li>
+        <li class="pill">Docker & CI/CD</li>
+        <li class="pill">Cross-platform tooling</li>
+      </ul>
+    </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <ul class="project-list">
-      <li><strong>Automated Cryptocurrency Trading Bot (2025)</strong> — Python, Binance API, PostgreSQL; automated
-        trading, monitoring, and alerting.</li>
-      <li><strong>ptf_nn_agent for Windows (2024)</strong> — Python, NanoMsg, Windows networking; extends PTF for
-        cross-platform L2/L3 validation.</li>
-      <li><strong>KeePass-Compatible Password Manager (2021)</strong> — C++, Qt5; KeePass-compatible password vault with
-        AES-256/Argon2id protection.</li>
-      <li><strong>Custom ls Implementation (2020)</strong> — C, POSIX; GNU ls-compatible directory tool for macOS/Linux.</li>
-    </ul>
-    <a class="project-link-inline" href="projects.html">See all projects</a>
-  </section>
+    <section class="highlight-grid" aria-label="Focus areas">
+        <article class="highlight-card">
+          <h3>Device & Network Validation</h3>
+          <p>Extend Packet Test Framework and network firmware toolchains to validate L2/L3 data paths across Windows and
+            Linux environments.</p>
+        </article>
+      <article class="highlight-card">
+        <h3>Automation & Tooling</h3>
+        <p>Automate pipelines, trading engines, and configuration workflows with Python, Docker, and reproducible CI/CD
+          practices.</p>
+      </article>
+      <article class="highlight-card">
+        <h3>Leadership Through Action</h3>
+        <p>Lead sports rescue teams and public trainings, bringing the same focus on preparation, communication, and
+          ownership into engineering teams.</p>
+      </article>
+    </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <p><strong>PLVision</strong> — Software Engineer (2021–present)<br>Working on C/C++ and Python systems for data
-      processing, PTF test automation, and virtualization with QEMU and Docker.</p>
-    <p><strong>Intellias</strong> — Associate C++ Engineer (2020–2021)<br>Developed unit tests and software components
-      for automotive navigation systems.</p>
-  </section>
+    <section id="projects" class="content-section">
+      <div class="section-heading">
+        <h2>Featured Projects</h2>
+        <a href="projects.html" class="section-link">See all projects</a>
+      </div>
+      <div class="feature-list">
+        <article class="feature-card">
+          <h3>Automated Cryptocurrency Trading Bot</h3>
+          <p>Dockerised Python engine using Binance API, PostgreSQL, and Raspberry Pi monitoring to execute, audit, and
+            backtest trading strategies.</p>
+        </article>
+        <article class="feature-card">
+          <h3>ptf_nn_agent for Windows</h3>
+          <p>NanoMsg-based bridge that connects PTF scripts to native Windows networking stack, enabling cross-platform
+            device validation.</p>
+        </article>
+        <article class="feature-card">
+          <h3>KeePass-Compatible Password Manager</h3>
+          <p>C++/Qt5 desktop vault interoperable with KDBX format, using AES-256 and Argon2id to secure credentials across
+            platforms.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Custom ls Implementation</h3>
+          <p>POSIX-compliant directory listing utility mirroring GNU <code>ls</code> behaviour across macOS and Linux with
+            support for extended flags.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="volunteering">
-    <h2>Volunteering</h2>
-    <div class="volunteer">
-      <p>Organized educational workshops for school students in programming and participated in sports tourism
-        volunteering events, helping young people build teamwork and resilience.</p>
-    </div>
-  </section>
+    <section id="experience" class="content-section experience-section">
+      <div class="section-heading">
+        <h2>Experience Snapshot</h2>
+        <a href="experience.html" class="section-link">Deep dive</a>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <span class="experience-role">Software Engineer · PLVision</span>
+            <span class="experience-meta">Feb 2024 – Present</span>
+          </div>
+          <p class="experience-summary">Accelerating storage offload solutions with automated validation and driver optimisation.</p>
+          <ul class="experience-points">
+            <li>Built Jenkins + Azure DevOps pipelines to cover build, test, and deployment loops.</li>
+            <li>Created Python traffic frameworks that cut manual QA and surface edge-case regressions.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <span class="experience-role">Software Engineer · Servi5</span>
+            <span class="experience-meta">Mar 2023 – Feb 2024</span>
+          </div>
+          <p class="experience-summary">Owned an enterprise cybersecurity platform, modernising delivery and analytics.</p>
+          <ul class="experience-points">
+            <li>Refactored legacy C/C++ core and redesigned licensing for dependable deployments.</li>
+            <li>Partnered with DevOps on containerised rollouts and automated validation suites.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <span class="experience-role">Software Engineer · PLVision</span>
+            <span class="experience-meta">Jul 2021 – Jan 2023</span>
+          </div>
+          <p class="experience-summary">Expanded L2/L3 validation with byte-level traffic analysis and new automation.</p>
+          <ul class="experience-points">
+            <li>Extended verification suites with new PTF modules and automated flows.</li>
+            <li>Analysed traffic captures to resolve stability issues in switch pipelines.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <span class="experience-role">Associate C++ Engineer · Intellias</span>
+            <span class="experience-meta">Dec 2020 – Jul 2021</span>
+          </div>
+          <p class="experience-summary">Delivered navigation features with rigorous testing and automation.</p>
+          <ul class="experience-points">
+            <li>Implemented C++ modules and GTest coverage for infotainment stacks.</li>
+            <li>Built Python utilities that automated daily verification and regression checks.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:artur.novotarskyi@gmail.com">artur.novotarskyi@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/anovotarsk" target="_blank">github.com/anovotarsk</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/arturnovotarskyi" target="_blank">linkedin.com/in/arturnovotarskyi</a>
-    </p>
-  </section>
+    <section id="spotlight" class="content-section spotlight">
+      <div class="section-heading">
+        <h2>Beyond the Desk</h2>
+        <a class="section-link" href="sports.html">Full sports story</a>
+      </div>
+      <p class="spotlight-intro">Leadership for me started on the trail: captaining the Small Academy of Rescue Service,
+        judging national competitions, and planning multi-day expeditions. The same discipline and empathy guide my
+        engineering teams.</p>
+      <div class="spotlight-grid">
+        <article class="spotlight-card">
+          <h3>Rescue Team Captain</h3>
+          <p>Leading youth rescue squads since 2017—designing drills, rope systems, and rapid-response playbooks that
+            demand calm communication.</p>
+        </article>
+        <article class="spotlight-card">
+          <h3>Certified Competition Judge</h3>
+          <p>Federation-certified referee for rescue sports events, keeping scoring fair and safety-first when pressure
+            peaks.</p>
+        </article>
+        <article class="spotlight-card">
+          <h3>Expedition Architect</h3>
+          <p>Planned Carpathian hikes and river rafting trips end-to-end, balancing logistics, safety, and on-the-fly
+            mentoring.</p>
+        </article>
+      </div>
+      <ul class="spotlight-stats" aria-label="Sports leadership highlights">
+        <li class="stat">
+          <span class="stat-value">10+</span>
+          <span class="stat-label">Expeditions led</span>
+        </li>
+        <li class="stat">
+          <span class="stat-value">4th</span>
+          <span class="stat-label">Place at Intl. Rescue Rally</span>
+        </li>
+        <li class="stat">
+          <span class="stat-value">2015</span>
+          <span class="stat-label">Joined School of Safety movement</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <h2>Let’s Build Something</h2>
+      <p>You can reach me directly or explore my code and professional profile.</p>
+      <div class="contact-links">
+        <a href="mailto:artur.novotarskyi@gmail.com" class="primary-cta">artur.novotarskyi@gmail.com</a>
+        <a href="https://github.com/anovotarsk" target="_blank" rel="noopener noreferrer">github.com/anovotarsk</a>
+        <a href="https://linkedin.com/in/arturnovotarskyi" target="_blank" rel="noopener noreferrer">linkedin.com/in/arturnovotarskyi</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Artur Novotarskyi | Built for College Application</p>
+    <p>© 2025 Artur Novotarskyi</p>
   </footer>
 </body>
 
