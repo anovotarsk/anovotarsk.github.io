@@ -13,7 +13,7 @@
     <div class="header-inner">
       <div class="header-brand">
         <h1><a href="index.html">Artur Novotarskyi</a></h1>
-        <p>Software Engineer · Network Systems · Embedded Development</p>
+        <p>Engineer · Mentor · Expedition Lead</p>
       </div>
       <nav class="header-nav">
         <a href="index.html">Home</a>
@@ -103,9 +103,35 @@
     </section>
   </main>
 
+  <button type="button" class="back-to-top" data-back-to-top aria-label="Back to top">&#8593;</button>
+
   <footer>
     <p>© 2025 Artur Novotarskyi</p>
   </footer>
+
+  <script>
+    (function () {
+      const control = document.querySelector('[data-back-to-top]');
+      if (!control) return;
+
+      const toggleVisibility = () => {
+        const threshold = window.innerHeight * 0.5;
+        if (window.scrollY > threshold) {
+          control.classList.add('is-visible');
+        } else {
+          control.classList.remove('is-visible');
+        }
+      };
+
+      control.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      window.addEventListener('scroll', toggleVisibility, { passive: true });
+      window.addEventListener('resize', toggleVisibility);
+      toggleVisibility();
+    })();
+  </script>
 </body>
 
 </html>
