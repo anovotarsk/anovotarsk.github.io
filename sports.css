@@ -353,3 +353,33 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
 }
+
+.sports-stats {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.sport-stat {
+  background: rgba(0, 74, 173, 0.08);
+  border-radius: 10px;
+  padding: 0.75rem 1.1rem;
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.sport-stat-value {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #004aad;
+}
+
+.sport-stat-label {
+  font-size: 0.85rem;
+  color: #333;
+}
