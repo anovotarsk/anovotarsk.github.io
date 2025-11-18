@@ -79,6 +79,24 @@ body {
   line-height: 1.6;
 }
 
+.page-hero .button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: #ffb100;
+  border: 2px solid #ffb100;
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-hero .button:hover {
+  background-color: #e39600;
+  border-color: #e39600;
+  color: #fff;
+}
+
 .volunteers-page main {
   max-width: 960px;
   margin: 0 auto 4rem;
