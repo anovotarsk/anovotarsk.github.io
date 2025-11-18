@@ -173,6 +173,18 @@ a.button:hover {
   background-color: #00337a;
 }
 
+.page-hero .button {
+  background-color: #ffb100;
+  color: #222;
+  border: 2px solid #ffb100;
+}
+
+.page-hero .button:hover {
+  background-color: #e39600;
+  border-color: #e39600;
+  color: #fff;
+}
+
 @media (max-width: 720px) {
   .header-inner {
     flex-direction: column;

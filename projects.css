@@ -286,15 +286,15 @@ body {
 }
 
 .page-hero .button {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #004aad;
-  border: 2px solid rgba(255, 255, 255, 0.95);
+  background-color: #ffb100;
+  color: #222;
+  border: 2px solid #ffb100;
 }
 
 .page-hero .button:hover {
-  background-color: #ffb100;
-  color: #222;
-  border-color: #ffb100;
+  background-color: #e39600;
+  border-color: #e39600;
+  color: #fff;
 }
 
 a {
